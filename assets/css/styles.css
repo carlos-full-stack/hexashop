@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.custom-hr {
+    max-width: 100%;
+    color: #cccccc;
+    margin: 0;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.container {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+@media (min-width: 600px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.header-logo-container,
+.header-container__nav {
+    flex: 1 1 auto;
+    width: 50%;
+}
+
+.header-container__nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.header-container__nav ul {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-container__nav li {
+    font-weight: 600;
+    text-transform: capitalize;
+}
