@@ -437,6 +437,43 @@ a {
     gap: 1rem;
 }
 
+
+.social-content__item {
+    position: relative;
+}
+
+.social-content__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-content__item:hover .social-content__overlay {
+    opacity: 1;
+}
+
+.social-content__overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.social-content__overlay h4 {
+    color: white;
+}
+
+
+
 .contact {
     display: flex;
     flex-direction: column;
