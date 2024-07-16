@@ -22,3 +22,18 @@ var mySwiper = new Swiper('.swiper', {
         }
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var openButton = document.querySelector('.open-button');
+    var closeButton = document.querySelector('.close-button');
+    var sidebar = document.querySelector('.sidebar');
+
+    openButton.addEventListener('click', function () {
+        sidebar.classList.add('sidebar--active');
+    });
+
+    closeButton.addEventListener('click', function () {
+        sidebar.classList.remove('sidebar--active');
+    });
+});
