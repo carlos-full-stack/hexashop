@@ -31,9 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     openButton.addEventListener('click', function () {
         sidebar.classList.add('sidebar--active');
+        openButton.classList.add('open-button--active'); // Añade esta línea
     });
 
     closeButton.addEventListener('click', function () {
         sidebar.classList.remove('sidebar--active');
+        openButton.classList.remove('open-button--active'); // Añade esta línea
     });
 });
