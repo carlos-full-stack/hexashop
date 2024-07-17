@@ -447,6 +447,16 @@ a {
     row-gap: 3rem;
 }
 
+blockquote {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.explore-products blockquote i {
+    position: absolute;
+    left: -40px;
+}
+
 
 @media (min-width: 600px) {
 
@@ -491,8 +501,8 @@ a {
 }
 
 .social-content {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 1rem;
 }
 
@@ -565,6 +575,26 @@ a {
     ;
 }
 
+.contact button {
+    background-color: black;
+    border: 0;
+    width: 44px;
+    height: 44px;
+}
+
+
+.contact button i {
+    color: white;
+}
+
+.contact button:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.contact button:hover i {
+    color: black;
+}
 
 .contact__address {
     display: grid;
